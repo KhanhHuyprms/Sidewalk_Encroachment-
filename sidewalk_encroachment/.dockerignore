@@ -1,0 +1,37 @@
+# Git & IDE
+.git/
+.gitignore
+.idea/
+.vscode/
+
+# Python cache & virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+venv*/
+env/
+ENV/
+
+# Backup & logs
+backup_*/
+*.log
+logs/*
+!logs/.gitkeep
+runs/
+
+# Large media files (mount via volume ./data instead)
+data/*.mp4
+data/*.avi
+data/*.mkv
+!data/cam_sidewalk_ai_zones.json
+
+# Documents
+*.pdf
+*.html
+*.tex
+
+# Local secrets (load via env_file in docker-compose)
+.env.local

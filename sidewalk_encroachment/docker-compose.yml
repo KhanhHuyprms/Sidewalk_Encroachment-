@@ -1,0 +1,69 @@
+version: '3.8'
+
+services:
+  # ===========================================================================
+  # 1. SIDEWALK-GPU (Mặc định: Chạy tăng tốc với GPU NVIDIA CUDA)
+  # Lệnh chạy: docker compose up -d
+  # ===========================================================================
+  sidewalk-worker:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: sidewalk-encroachment:gpu-latest
+    container_name: sidewalk_encroachment_gpu
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      - PYTHONUNBUFFERED=1
+      - INFERENCE_DEVICE=cuda:0
+      - USE_HALF_PRECISION=true
+    volumes:
+      - ./data:/app/data
+      - ./models:/app/models
+      - ./logs:/app/logs
+      - ./config:/app/config
+    network_mode: "host"
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "20m"
+        max-file: "5"
+
+  # ===========================================================================
+  # 2. SIDEWALK-CPU (Dự phòng cho máy chủ không có GPU NVIDIA)
+  # Lệnh chạy: docker compose --profile cpu up -d sidewalk-worker-cpu
+  # ===========================================================================
+  sidewalk-worker-cpu:
+    build:
+      context: .
+      dockerfile: Dockerfile.cpu
+    image: sidewalk-encroachment:cpu-latest
+    container_name: sidewalk_encroachment_cpu
+    restart: unless-stopped
+    profiles:
+      - cpu
+    env_file:
+      - .env
+    environment:
+      - PYTHONUNBUFFERED=1
+      - INFERENCE_DEVICE=cpu
+      - USE_HALF_PRECISION=false
+    volumes:
+      - ./data:/app/data
+      - ./models:/app/models
+      - ./logs:/app/logs
+      - ./config:/app/config
+    network_mode: "host"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "20m"
+        max-file: "5"

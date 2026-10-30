@@ -1,0 +1,40 @@
+# =============================================================================
+# DOCKERFILE.CPU - Lightweight CPU Deployment (Python 3.12 Slim)
+# Dành cho môi trường không có card đồ hoạ NVIDIA rời
+# =============================================================================
+
+FROM python:3.12-slim
+
+WORKDIR /app
+
+ENV DEBIAN_FRONTEND=noninteractive \
+    PYTHONUNBUFFERED=1 \
+    PYTHONDONTWRITEBYTECODE=1 \
+    TZ=Asia/Ho_Chi_Minh \
+    INFERENCE_DEVICE=cpu \
+    USE_HALF_PRECISION=false
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    tzdata \
+    libgl1 \
+    libglib2.0-0 \
+    libgomp1 \
+    libsm6 \
+    libxext6 \
+    libxrender1 \
+    ffmpeg \
+    curl \
+    && ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY requirements.txt .
+RUN pip install --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir torch torchvision --index-url https://download.pytorch.org/whl/cpu && \
+    pip install --no-cache-dir -r requirements.txt
+
+COPY . .
+
+RUN mkdir -p /app/data /app/models /app/logs
+
+CMD ["python", "main.py"]
+

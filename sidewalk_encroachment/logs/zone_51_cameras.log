@@ -1,0 +1,113 @@
+=====================================================================================
+  DANH SÁCH CAMERA ZONE 51 TRÊN SMART VMS STAGING (2026-10-30 14:07:59)
+  Tổng số camera trong Zone: 6 camera
+=====================================================================================
+STT  | CAMERA CODE        | TRẠNG THÁI  | AI MODULES BẬT            | TÊN CAMERA
+-------------------------------------------------------------------------------------
+1    | camera_crowd       | ONLINE      | CROWD_DETECTION           | N/A
+       └─ UUID: a3920819-a6a5-40cb-b728-3c20430b8ca9
+       └─ RTSP: rtsp://admin:prometheus123@192.168.1.250:18554/c103_camera_crowd
+2    | cam_sidewalk       | ONLINE      | SIDEWALK_ENCROACHMENT     | N/A  ⭐ [DỰ ÁN CỦA BẠN]
+       └─ UUID: 699bc4c0-2f06-4671-8615-321278d86d5c
+       └─ RTSP: rtsp://admin:prometheus123@192.168.1.250:18554/c103_cam_sidewalk
+3    | cam_muc_nuoc       | ONLINE      | WATER_LEVEL_DETECTION     | N/A
+       └─ UUID: 05259575-58ab-4e10-bbcd-f364c129fde0
+       └─ RTSP: rtsp://admin:prometheus123@192.168.1.250:18554/c103_cam_muc_nuoc
+4    | auda               | ONLINE      | FIGHT_DETECTION           | N/A
+       └─ UUID: 3235bbba-7d37-4698-a3b5-e7aa448131f4
+       └─ RTSP: rtsp://admin:prometheus123@192.168.1.250:18554/c103_auda
+5    | camera_face_01     | ONLINE      | FACE                      | N/A
+       └─ UUID: d01535d7-660a-4935-b0f0-2486d2a867f9
+       └─ RTSP: rtsp://admin:prometheus123@192.168.1.250:18554/c103_camera_face_01
+6    | camera_plate_01    | ONLINE      | PLATE                     | N/A
+       └─ UUID: e240a093-fae9-4c25-a11e-1aeb037a0a9b
+       └─ RTSP: rtsp://admin:prometheus123@192.168.1.250:18554/c103_camera_plate_01
+-------------------------------------------------------------------------------------
+
+🎯 CAMERA MỤC TIÊU 'cam_sidewalk' (Lấn chiếm vỉa hè): ĐÃ SẴN SÀNG ĐỂ XỬ LÝ AI!
+
+=== RAW JSON DATA ===
+{
+  "cameras": [
+    {
+      "id": "a3920819-a6a5-40cb-b728-3c20430b8ca9",
+      "code": "camera_crowd",
+      "status": "ONLINE",
+      "ai_modules": [
+        "CROWD_DETECTION"
+      ],
+      "rtsp_url": "rtsp://admin:prometheus123@192.168.1.250:18554/c103_camera_crowd",
+      "restream_urls": {
+        "CROWD_DETECTION": "rtsp://admin:prometheus123@192.168.1.250:18554/c103_camera_crowd"
+      },
+      "zone_id": 51
+    },
+    {
+      "id": "699bc4c0-2f06-4671-8615-321278d86d5c",
+      "code": "cam_sidewalk",
+      "status": "ONLINE",
+      "ai_modules": [
+        "SIDEWALK_ENCROACHMENT"
+      ],
+      "rtsp_url": "rtsp://admin:prometheus123@192.168.1.250:18554/c103_cam_sidewalk",
+      "restream_urls": {
+        "SIDEWALK_ENCROACHMENT": "rtsp://admin:prometheus123@192.168.1.250:18554/c103_cam_sidewalk"
+      },
+      "zone_id": 51
+    },
+    {
+      "id": "05259575-58ab-4e10-bbcd-f364c129fde0",
+      "code": "cam_muc_nuoc",
+      "status": "ONLINE",
+      "ai_modules": [
+        "WATER_LEVEL_DETECTION"
+      ],
+      "rtsp_url": "rtsp://admin:prometheus123@192.168.1.250:18554/c103_cam_muc_nuoc",
+      "restream_urls": {
+        "WATER_LEVEL_DETECTION": "rtsp://admin:prometheus123@192.168.1.250:18554/c103_cam_muc_nuoc"
+      },
+      "zone_id": 51
+    },
+    {
+      "id": "3235bbba-7d37-4698-a3b5-e7aa448131f4",
+      "code": "auda",
+      "status": "ONLINE",
+      "ai_modules": [
+        "FIGHT_DETECTION"
+      ],
+      "rtsp_url": "rtsp://admin:prometheus123@192.168.1.250:18554/c103_auda",
+      "restream_urls": {
+        "FIGHT_DETECTION": "rtsp://admin:prometheus123@192.168.1.250:18554/c103_auda"
+      },
+      "zone_id": 51
+    },
+    {
+      "id": "d01535d7-660a-4935-b0f0-2486d2a867f9",
+      "code": "camera_face_01",
+      "status": "ONLINE",
+      "ai_modules": [
+        "FACE"
+      ],
+      "rtsp_url": "rtsp://admin:prometheus123@192.168.1.250:18554/c103_camera_face_01",
+      "restream_urls": {
+        "FACE": "rtsp://admin:prometheus123@192.168.1.250:18554/c103_camera_face_01"
+      },
+      "zone_id": 51
+    },
+    {
+      "id": "e240a093-fae9-4c25-a11e-1aeb037a0a9b",
+      "code": "camera_plate_01",
+      "status": "ONLINE",
+      "ai_modules": [
+        "PLATE"
+      ],
+      "rtsp_url": "rtsp://admin:prometheus123@192.168.1.250:18554/c103_camera_plate_01",
+      "restream_urls": {
+        "PLATE": "rtsp://admin:prometheus123@192.168.1.250:18554/c103_camera_plate_01"
+      },
+      "zone_id": 51
+    }
+  ],
+  "total": 6,
+  "zone_id": 51
+}

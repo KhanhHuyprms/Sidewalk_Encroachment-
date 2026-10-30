@@ -1,0 +1,100 @@
+23:12:46 | pipeline       | INFO  | ======================================================================
+23:12:46 | pipeline       | INFO  |   KHỞI CHẠY PIPELINE GIÁM SÁT LẤN CHIẾM VỈA HÈ
+23:12:46 | pipeline       | INFO  |   Module: SIDEWALK_ENCROACHMENT | Zone: 51 | Org: 103 | Client: tts_KhanhHuy_05
+23:12:46 | pipeline       | INFO  | ======================================================================
+23:12:46 | mqtt_client    | INFO  | Connecting to aioc-stg.atin.vn:443 ...
+23:12:46 | mqtt_client    | INFO  | Connected to broker (rc=Success).
+23:12:46 | pipeline       | INFO  | ✅ Đã kết nối MQTT Broker thành công.
+23:12:46 | mqtt_client    | INFO  | Subscribed: smart_vms/cameras/zone/51
+23:12:46 | mqtt_client    | INFO  | Requested cameras for zone 51
+23:12:46 | mqtt_client    | INFO  | Received camera list on smart_vms/cameras/zone/51
+23:12:46 | pipeline       | INFO  | Nhận được 7 camera từ Zone 51
+23:12:46 | pipeline       | INFO  |   ✅ Camera hợp lệ: cam_sidewalk (id=699bc4c0-2f06-4671-8615-321278d86d5c) - Modules: ['SIDEWALK_ENCROACHMENT']
+23:12:46 | detector       | INFO  | Loading YOLO model: models/best.pt (conf=0.50, imgsz=640, iou=0.40, clahe=False)
+23:12:46 | detector       | INFO  | Phát hiện Sidewalk Custom Model (models/best.pt) có 8 classes. Chế độ: chỉ nhận diện class IDs [0, 1, 2, 3, 5] (0:bicycle, 1:car, 2:motorbike, 3:object, 5:person)
+23:12:46 | pipeline       | INFO  | [cam_sidewalk] Đã nạp 1 polygon từ cache: cam_sidewalk_ai_zones.json
+23:12:46 | pipeline       | INFO  | [cam_sidewalk] Đang mở luồng video: rtsp://admin:prometheus123@192.168.1.250:18554/c103_cam_sidewalk
+23:12:46 | pipeline       | INFO  | [cam_sidewalk] Camera Worker started
+23:12:46 | mqtt_client    | INFO  | Subscribed: smart_vms/cameras/cam_sidewalk/ai_zones/SIDEWALK_ENCROACHMENT
+23:12:46 | mqtt_client    | INFO  | Received camera list on smart_vms/cameras/zone/51
+23:12:46 | pipeline       | INFO  | Nhận được 7 camera từ Zone 51
+23:12:46 | pipeline       | INFO  |   ✅ Camera hợp lệ: cam_sidewalk (id=699bc4c0-2f06-4671-8615-321278d86d5c) - Modules: ['SIDEWALK_ENCROACHMENT']
+23:12:46 | mqtt_client    | INFO  | Subscribed: smart_vms/cameras/cam_sidewalk/ai_zones/SIDEWALK_ENCROACHMENT
+23:12:46 | mqtt_client    | INFO  | Received ai_zones on smart_vms/cameras/cam_sidewalk/ai_zones/SIDEWALK_ENCROACHMENT
+23:12:46 | pipeline       | INFO  | 📥 [cam_sidewalk] Nhận cấu hình vùng từ topic smart_vms/cameras/cam_sidewalk/ai_zones/SIDEWALK_ENCROACHMENT: 1 Polygon vỉa hè.
+23:12:46 | pipeline       | INFO  | 💾 [cam_sidewalk] Đã lưu cập nhật vùng vỉa hè ra file: cam_sidewalk_ai_zones.json
+23:12:46 | pipeline       | INFO  | [cam_sidewalk] Đã lưu 1 ai_zone(s), sẽ áp dụng khi nhận frame đầu tiên.
+23:12:46 | mqtt_client    | INFO  | Received ai_zones on smart_vms/cameras/cam_sidewalk/ai_zones/SIDEWALK_ENCROACHMENT
+23:12:46 | pipeline       | INFO  | 📥 [cam_sidewalk] Nhận cấu hình vùng từ topic smart_vms/cameras/cam_sidewalk/ai_zones/SIDEWALK_ENCROACHMENT: 1 Polygon vỉa hè.
+23:12:46 | pipeline       | INFO  | 💾 [cam_sidewalk] Đã lưu cập nhật vùng vỉa hè ra file: cam_sidewalk_ai_zones.json
+23:12:46 | pipeline       | INFO  | [cam_sidewalk] Đã lưu 1 ai_zone(s), sẽ áp dụng khi nhận frame đầu tiên.
+23:12:54 | pipeline       | INFO  | Dừng tiến trình bởi người dùng (Ctrl+C).
+23:12:54 | pipeline       | INFO  | Đang dừng Pipeline...
+23:12:59 | pipeline       | INFO  | [cam_sidewalk] Camera Worker stopped
+23:12:59 | mqtt_client    | WARNING | Disconnected (rc=Normal disconnection). Auto-reconnect by paho.
+23:12:59 | mqtt_client    | INFO  | Disconnected from broker.
+23:12:59 | pipeline       | INFO  | Pipeline đã dừng.
+23:15:14 | pipeline       | INFO  | ======================================================================
+23:15:14 | pipeline       | INFO  |   KHỞI CHẠY PIPELINE GIÁM SÁT LẤN CHIẾM VỈA HÈ
+23:15:14 | pipeline       | INFO  |   Module: SIDEWALK_ENCROACHMENT | Zone: 51 | Org: 103 | Client: tts_KhanhHuy_05
+23:15:14 | pipeline       | INFO  | ======================================================================
+23:15:14 | mqtt_client    | INFO  | Connecting to aioc-stg.atin.vn:443 ...
+23:15:14 | mqtt_client    | INFO  | Connected to broker (rc=Success).
+23:15:14 | pipeline       | INFO  | ✅ Đã kết nối MQTT Broker thành công.
+23:15:14 | mqtt_client    | INFO  | Subscribed: smart_vms/cameras/zone/51
+23:15:14 | mqtt_client    | INFO  | Requested cameras for zone 51
+23:15:14 | mqtt_client    | INFO  | Received camera list on smart_vms/cameras/zone/51
+23:15:14 | pipeline       | INFO  | Nhận được 7 camera từ Zone 51
+23:15:14 | pipeline       | INFO  |   ✅ Camera hợp lệ: cam_sidewalk (id=699bc4c0-2f06-4671-8615-321278d86d5c) - Modules: ['SIDEWALK_ENCROACHMENT']
+23:15:14 | detector       | INFO  | Loading YOLO model: models/best.pt (conf=0.50, imgsz=640, iou=0.40, clahe=False)
+23:15:14 | detector       | INFO  | Phát hiện Sidewalk Custom Model (models/best.pt) có 8 classes. Chế độ: chỉ nhận diện class IDs [0, 1, 2, 3, 5] (0:bicycle, 1:car, 2:motorbike, 3:object, 5:person)
+23:15:14 | pipeline       | INFO  | [cam_sidewalk] Đã nạp 1 polygon từ cache: cam_sidewalk_ai_zones.json
+23:15:14 | pipeline       | INFO  | [cam_sidewalk] Đang mở luồng video: rtsp://admin:prometheus123@192.168.1.250:18554/c103_cam_sidewalk
+23:15:14 | pipeline       | INFO  | [cam_sidewalk] Camera Worker started
+23:15:14 | mqtt_client    | INFO  | Subscribed: smart_vms/cameras/cam_sidewalk/ai_zones/SIDEWALK_ENCROACHMENT
+23:15:14 | mqtt_client    | INFO  | Received camera list on smart_vms/cameras/zone/51
+23:15:14 | pipeline       | INFO  | Nhận được 7 camera từ Zone 51
+23:15:14 | pipeline       | INFO  |   ✅ Camera hợp lệ: cam_sidewalk (id=699bc4c0-2f06-4671-8615-321278d86d5c) - Modules: ['SIDEWALK_ENCROACHMENT']
+23:15:14 | mqtt_client    | INFO  | Subscribed: smart_vms/cameras/cam_sidewalk/ai_zones/SIDEWALK_ENCROACHMENT
+23:15:14 | mqtt_client    | INFO  | Received ai_zones on smart_vms/cameras/cam_sidewalk/ai_zones/SIDEWALK_ENCROACHMENT
+23:15:14 | pipeline       | INFO  | 📥 [cam_sidewalk] Nhận cấu hình vùng từ topic smart_vms/cameras/cam_sidewalk/ai_zones/SIDEWALK_ENCROACHMENT: 1 Polygon vỉa hè.
+23:15:14 | pipeline       | INFO  | 💾 [cam_sidewalk] Đã lưu cập nhật vùng vỉa hè ra file: cam_sidewalk_ai_zones.json
+23:15:14 | pipeline       | INFO  | [cam_sidewalk] Đã lưu 1 ai_zone(s), sẽ áp dụng khi nhận frame đầu tiên.
+23:15:14 | mqtt_client    | INFO  | Received ai_zones on smart_vms/cameras/cam_sidewalk/ai_zones/SIDEWALK_ENCROACHMENT
+23:15:14 | pipeline       | INFO  | 📥 [cam_sidewalk] Nhận cấu hình vùng từ topic smart_vms/cameras/cam_sidewalk/ai_zones/SIDEWALK_ENCROACHMENT: 1 Polygon vỉa hè.
+23:15:14 | pipeline       | INFO  | 💾 [cam_sidewalk] Đã lưu cập nhật vùng vỉa hè ra file: cam_sidewalk_ai_zones.json
+23:15:14 | pipeline       | INFO  | [cam_sidewalk] Đã lưu 1 ai_zone(s), sẽ áp dụng khi nhận frame đầu tiên.
+23:15:35 | mqtt_client    | INFO  | Received camera list on smart_vms/cameras/zone/51
+23:15:35 | pipeline       | INFO  | Nhận được 7 camera từ Zone 51
+23:15:35 | pipeline       | INFO  |   ✅ Camera hợp lệ: cam_sidewalk (id=699bc4c0-2f06-4671-8615-321278d86d5c) - Modules: ['SIDEWALK_ENCROACHMENT']
+23:15:35 | mqtt_client    | INFO  | Subscribed: smart_vms/cameras/cam_sidewalk/ai_zones/SIDEWALK_ENCROACHMENT
+23:15:35 | mqtt_client    | INFO  | Received ai_zones on smart_vms/cameras/cam_sidewalk/ai_zones/SIDEWALK_ENCROACHMENT
+23:15:35 | pipeline       | INFO  | 📥 [cam_sidewalk] Nhận cấu hình vùng từ topic smart_vms/cameras/cam_sidewalk/ai_zones/SIDEWALK_ENCROACHMENT: 1 Polygon vỉa hè.
+23:15:35 | pipeline       | INFO  | 💾 [cam_sidewalk] Đã lưu cập nhật vùng vỉa hè ra file: cam_sidewalk_ai_zones.json
+23:15:35 | pipeline       | INFO  | [cam_sidewalk] Đã lưu 1 ai_zone(s), sẽ áp dụng khi nhận frame đầu tiên.
+23:15:44 | pipeline       | WARNING | [cam_sidewalk] Không mở được RTSP (rtsp://admin:prometheus123@192.168.1.250:18554/c103_cam_sidewalk), chuyển sang file video nội bộ: Cam_05.mp4
+23:15:44 | pipeline       | INFO  | [cam_sidewalk] Đang mở luồng video: C:\Users\LAPTOP 247\Downloads\AI_box-20261028T235807Z-1-001\AI_box\sidewalk_encroachment\data\Cam_05.mp4
+23:15:44 | pipeline       | INFO  | [cam_sidewalk] Luồng video đã kết nối thành công (Low Latency Mode)
+23:15:44 | detector       | INFO  | Polygon loaded: SIDEWALK (10 points)
+23:15:44 | detector       | INFO  | Total polygons: 1
+23:15:58 | detector       | INFO  | 🚨 Encroachment event: track=1 class=motorbike duration=10.0s
+23:15:58 | storage        | INFO  | Uploaded snapshot → anomaly/2026-10-30/camera_699bc4c0-2f06-4671-8615-321278d86d5c/fcdb735945f84c359a2a90d18572694f.jpg
+23:15:58 | pipeline       | INFO  | 🚨 [cam_sidewalk] CẢNH BÁO VI PHẠM ĐÃ GỬI LÊN VMS: motorbike (duration=10.0s, snapshot=anomaly/2026-10-30/camera_699bc4c0-2f06-4671-8615-321278d86d5c/fcdb735945f84c359a2a90d18572694f.jpg)
+23:16:04 | detector       | INFO  | 🚨 Encroachment event: track=8 class=object duration=10.0s
+23:16:04 | pipeline       | INFO  | [cam_sidewalk] Đang trong thời gian Cooldown (60s), bỏ qua sự kiện trùng.
+23:16:35 | mqtt_client    | INFO  | Received camera list on smart_vms/cameras/zone/51
+23:16:35 | pipeline       | INFO  | Nhận được 7 camera từ Zone 51
+23:16:35 | pipeline       | INFO  |   ✅ Camera hợp lệ: cam_sidewalk (id=699bc4c0-2f06-4671-8615-321278d86d5c) - Modules: ['SIDEWALK_ENCROACHMENT']
+23:16:35 | mqtt_client    | INFO  | Subscribed: smart_vms/cameras/cam_sidewalk/ai_zones/SIDEWALK_ENCROACHMENT
+23:16:35 | mqtt_client    | INFO  | Received ai_zones on smart_vms/cameras/cam_sidewalk/ai_zones/SIDEWALK_ENCROACHMENT
+23:16:35 | pipeline       | INFO  | 📥 [cam_sidewalk] Nhận cấu hình vùng từ topic smart_vms/cameras/cam_sidewalk/ai_zones/SIDEWALK_ENCROACHMENT: 1 Polygon vỉa hè.
+23:16:35 | pipeline       | INFO  | 💾 [cam_sidewalk] Đã lưu cập nhật vùng vỉa hè ra file: cam_sidewalk_ai_zones.json
+23:16:35 | detector       | INFO  | Polygon loaded: SIDEWALK (10 points)
+23:16:35 | detector       | INFO  | Total polygons: 1
+23:16:35 | pipeline       | INFO  | 🔄 [cam_sidewalk] HOT-RELOAD THÀNH CÔNG: Đã áp dụng 1 polygon mới vào Detector mà không cần restart!
+23:17:26 | pipeline       | INFO  | Dừng tiến trình bởi người dùng (Ctrl+C).
+23:17:26 | pipeline       | INFO  | Đang dừng Pipeline...
+23:17:26 | pipeline       | INFO  | [cam_sidewalk] Camera Worker stopped
+23:17:27 | mqtt_client    | WARNING | Disconnected (rc=Normal disconnection). Auto-reconnect by paho.
+23:17:27 | mqtt_client    | INFO  | Disconnected from broker.
+23:17:27 | pipeline       | INFO  | Pipeline đã dừng.
