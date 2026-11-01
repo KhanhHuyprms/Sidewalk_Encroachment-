@@ -81,7 +81,7 @@ sequenceDiagram
       "ai_modules": [
         "SIDEWALK_ENCROACHMENT"
       ],
-      "rtsp_url": "rtsp://admin:prometheus123@192.168.1.250:18554/c103_cam_sidewalk",
+      
       "zone_id": 51
     }
   ]

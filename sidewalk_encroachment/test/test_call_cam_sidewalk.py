@@ -34,8 +34,8 @@ VN_TZ = timezone(timedelta(hours=7))
 MQTT_HOST          = "aioc-stg.atin.vn"
 MQTT_PORT          = 443
 MQTT_PATH          = "/mqtt"
-MQTT_USER          = "atin"
-MQTT_PASS          = "Atin@2026#"
+MQTT_USER          = 
+MQTT_PASS          = 
 STORAGE_UPLOAD_URL = "https://aioc-stg.atin.vn/storage/upload/file"
 STORAGE_VIEW_URL   = "https://aioc-stg.atin.vn/api/v1/snapshot/image"
 
@@ -105,7 +105,7 @@ def step1_query_camera_info():
             "status": "ONLINE",
             "zone_id": 51,
             "organization_id": 103,
-            "rtsp_url": "rtsp://admin:prometheus123@192.168.1.250:18554/c103_cam_sidewalk",
+           # "rtsp_url": "",
             "ai_modules": [],
         }
 

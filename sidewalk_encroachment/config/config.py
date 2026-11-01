@@ -23,8 +23,8 @@ else:
 # ── MQTT ──────────────────────────────────────────────────────────
 MQTT_BROKER      = os.getenv("MQTT_BROKER", "aioc-stg.atin.vn")
 MQTT_PORT        = int(os.getenv("MQTT_PORT", "443"))
-MQTT_USERNAME    = os.getenv("MQTT_USERNAME", "atin")
-MQTT_PASSWORD    = os.getenv("MQTT_PASSWORD", "Atin@2026#")
+#MQTT_USERNAME    = os.getenv("MQTT_USERNAME", "")
+#MQTT_PASSWORD    = os.getenv("MQTT_PASSWORD", "")
 MQTT_CLIENT_ID   = os.getenv("MQTT_CLIENT_ID", "tts_KhanhHuy_05")
 
 # ── VMS / Organization ───────────────────────────────────────────

@@ -33,8 +33,8 @@ STORAGE_VIEW_URL   = "https://aioc-stg.atin.vn/api/v1/snapshot/image"
 MQTT_HOST          = "aioc-stg.atin.vn"
 MQTT_PORT          = 443
 MQTT_PATH          = "/mqtt"
-MQTT_USER          = "atin"
-MQTT_PASS          = "Atin@2026#"
+MQTT_USER          = 
+MQTT_PASS          = 
 
 TEST_CAMERA_ID     = "699bc4c0-2f06-4671-8615-321278d86d5c"
 TEST_CAMERA_CODE   = "cam_sidewalk"
