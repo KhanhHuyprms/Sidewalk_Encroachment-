@@ -28,10 +28,10 @@ import paho.mqtt.client as mqtt
 VN_TZ = timezone(timedelta(hours=7))
 
 # Cấu hình từ tài liệu AI_MODULES_MQTT.md
-STORAGE_UPLOAD_URL = "https://aioc-stg.atin.vn/storage/upload/file"
-STORAGE_VIEW_URL   = "https://aioc-stg.atin.vn/api/v1/snapshot/image"
-MQTT_HOST          = "aioc-stg.atin.vn"
-MQTT_PORT          = 443
+STORAGE_UPLOAD_URL = 
+STORAGE_VIEW_URL   = 
+MQTT_HOST          = 
+MQTT_PORT          = 
 MQTT_PATH          = "/mqtt"
 MQTT_USER          = 
 MQTT_PASS          = 

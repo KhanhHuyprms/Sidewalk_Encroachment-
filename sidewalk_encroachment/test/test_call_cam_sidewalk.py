@@ -31,13 +31,13 @@ if sys.platform == "win32":
 VN_TZ = timezone(timedelta(hours=7))
 
 # Cấu hình VMS Staging
-MQTT_HOST          = "aioc-stg.atin.vn"
-MQTT_PORT          = 443
+MQTT_HOST          = ""
+MQTT_PORT          = 
 MQTT_PATH          = "/mqtt"
 MQTT_USER          = 
 MQTT_PASS          = 
-STORAGE_UPLOAD_URL = "https://aioc-stg.atin.vn/storage/upload/file"
-STORAGE_VIEW_URL   = "https://aioc-stg.atin.vn/api/v1/snapshot/image"
+STORAGE_UPLOAD_URL = ""
+STORAGE_VIEW_URL   = ""
 
 TARGET_CAM_CODE    = "cam_sidewalk"
 ZONE_ID            = 51

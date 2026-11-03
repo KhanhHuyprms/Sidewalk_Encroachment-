@@ -21,11 +21,11 @@ else:
     load_dotenv()
 
 # ── MQTT ──────────────────────────────────────────────────────────
-MQTT_BROKER      = os.getenv("MQTT_BROKER", "aioc-stg.atin.vn")
-MQTT_PORT        = int(os.getenv("MQTT_PORT", "443"))
+MQTT_BROKER      = os.getenv("MQTT_BROKER", "")
+MQTT_PORT        = int(os.getenv("MQTT_PORT", ""))
 #MQTT_USERNAME    = os.getenv("MQTT_USERNAME", "")
 #MQTT_PASSWORD    = os.getenv("MQTT_PASSWORD", "")
-MQTT_CLIENT_ID   = os.getenv("MQTT_CLIENT_ID", "tts_KhanhHuy_05")
+MQTT_CLIENT_ID   = os.getenv("MQTT_CLIENT_ID", "")
 
 # ── VMS / Organization ───────────────────────────────────────────
 ORGANIZATION_ID  = int(os.getenv("ORGANIZATION_ID", "103"))
@@ -37,7 +37,7 @@ CAMERA_ID        = os.getenv("CAMERA_ID", "699bc4c0-2f06-4671-8615-321278d86d5c"
 
 # ── Storage API ──────────────────────────────────────────────────
 STORAGE_API_URL  = os.getenv("STORAGE_API_URL",
-                             "https://aioc-stg.atin.vn/storage/upload/file")
+                             "")
 
 # ── AI Module ────────────────────────────────────────────────────
 AI_MODULE        = "SIDEWALK_ENCROACHMENT"
